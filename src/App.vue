@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="container-fluid" style="background-color: #ffffff;">
-      <div class="jumbotron container bg-dark mb-0" style="background: radial-gradient(circle, rgba(2,0,36,1) 15%, rgba(9,66,121,1) 65%, rgba(45,60,0,1) 90%);">
+      <div class="jumbotron container bg-dark mb-0" style="background: radial-gradient(circle, rgba(2,0,36,1) 3%, rgba(9,66,121,1) 45%, rgba(45,60,0,1) 90%);">
         <div class="row">
           <div class="col-lg-4">
             <img class="col-md-12" style="height:100%;" src="logo-bakalan.png" alt="">
@@ -35,13 +35,13 @@
           </div>
         </div>
       </div>
-      <nav class="navbar border border-top-0 navbar-expand navbar-light rounded-pill mb-3 d-flex justify-content-between" v-bind:class="{ sticky: isSticky }" style="background-color: #D3b850; font-weight:bold;">
+      <nav class="navbar border border-primary border-top-0 navbar-expand navbar-light rounded-pill mb-3 d-flex justify-content-between" v-bind:class="{ sticky: isSticky }" style="background-color: #D3b850; font-weight:bold;">
         <ul class="nav navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Beranda</a>
+            <a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true"></i> Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-users" aria-hidden="true"></i> Profil</a>
+            <a class="nav-link" href="/profile"><i class="fa fa-users" aria-hidden="true"></i> Profil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fa fa-picture-o" aria-hidden="true"></i> Galeri</a>
@@ -57,11 +57,77 @@
           </li>
         </ul>
       </nav>
-      <div class="container" style="height:1000px;">
-        <router-view/>
-      </div>
     </div>
 
+    <div class="container" style="min-height:500px;">
+      <router-view/>
+    </div>
+
+    <footer class="page-footer font-small bg-secondary pt-4 border-info mt-5" style="border-top:5px solid;">
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+            <h5 class="font-weight-bold text-uppercase mb-4">bakalan desaku</h5>
+            <p>Bakalan adalah sebuah desa di wilayah Kec. Bululawang, Kab. Malang, Jawa Timur.</p>
+            <p>Desa Bakalan adalah desa terluas se Kecamatan Bululawang dan telah memenangkan Lomba Desa se Kabupaten Malang Juara ke 3 pada tahun 2008</p>
+          </div>
+          <hr class="clearfix w-100 d-none">
+          <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <h5 class="font-weight-bold text-uppercase mb-4">tentang kami</h5>
+            <ul class="list-unstyled">
+              <li>
+                <p><a href="#!" style="text-decoration: none; color:#D3b850;">PROFILE</a></p>
+              </li>
+              <li>
+                <p><a href="#!" style="text-decoration: none; color:#D3b850;">GALERI</a></p>
+              </li>
+              <li>
+                <p><a href="#!" style="text-decoration: none; color:#D3b850;">BLOGS</a></p>
+              </li>
+              <li>
+                <p><a href="#!" style="text-decoration: none; color:#D3b850;">LAYANAN</a></p>
+              </li>
+            </ul>
+          </div>
+          <hr style="height:30px" class="clearfix w-100 d-md-none">
+          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <h5 class="font-weight-bold text-uppercase mb-4">alamat</h5>
+            <ul class="list-unstyled">
+              <li>
+                <p><i class="fa fa-home mr-3"></i>Jl. Raya Bakalan 01/02</p>
+              </li>
+              <li>
+                <p><i class="fa fa-envelope mr-3"></i> admin@bakalandesaku.com</p>
+              </li>
+              <li>
+                <p><i class="fa fa-phone mr-3"></i></p>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-2 col-lg-2 mx-auto my-4">
+            <div class="btn-group-vertical">
+              <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+              <a href="#!">
+                <i class="btn rounded-circle btn-primary mb-4 fa fa-2x fa-facebook-f"></i>
+              </a>
+              <a href="#!">
+                <i class="btn rounded-circle btn-info mb-4 fa fa-2x fa-twitter"></i>
+              </a>
+              <a href="#!">
+                <i class="btn rounded-circle btn-danger mb-4 fa fa-2x fa-google-plus"></i>
+              </a>
+              <a href="#!">
+                <i class="btn rounded-circle btn-danger mb-4 fa fa-2x fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright font-weight-bold text-center py-3" style="background-color: #D3b850;">© 2020 Copyright.
+        <a href="https://tamhor.com/" target="_blank"> Tamhor Dev.</a>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -140,6 +206,7 @@ li > a:hover:before {
   width: 70%;
   left: 15%;
 }
+
 @media (max-width: 978px) {
 nav {
   left: 0;
