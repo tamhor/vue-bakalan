@@ -28,7 +28,7 @@
       <div class="jumbotron container bg-dark mb-0" style="background: radial-gradient(circle, rgba(2,0,36,1) 15%, rgba(9,66,121,1) 65%, rgba(45,60,0,1) 90%);">
         <div class="row">
           <div class="col-lg-4">
-            <img class="col-md-12" style="height:100%;" src="/images/logo-bakalan.png" alt="">
+            <img class="col-md-12" style="height:100%;" src="logo-bakalan.png" alt="">
           </div>
           <div class="col-lg-8">
             <!-- I hope this is for adsense -->
