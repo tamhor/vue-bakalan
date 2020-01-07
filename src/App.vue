@@ -37,10 +37,10 @@
       </div>
       <nav class="navbar border border-primary border-top-0 navbar-expand navbar-light rounded-pill mb-3 d-flex justify-content-between" v-bind:class="{ sticky: isSticky }" style="background-color: #D3b850; font-weight:bold;">
         <ul class="nav navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item " @click="active = 1" :class="{ 'active': active === 1 }">
             <a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true"></i> Beranda</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" @click="active = 2" :class="{ 'active': active === 2 }">
             <a class="nav-link" href="/profile"><i class="fa fa-users" aria-hidden="true"></i> Profil</a>
           </li>
           <li class="nav-item">
@@ -48,9 +48,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i> Blogs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Agenda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fa fa-gears" aria-hidden="true"></i> Layanan</a>
@@ -151,7 +148,8 @@ nav ul {
 }
 
 nav ul li {
-  width: 16.666%;
+  /* width: 16.666%; */
+  width: 20%;
 }
 
 nav ul li:hover {
@@ -227,6 +225,7 @@ import $ from 'jquery'
 export default {
   data: function () {
     return {
+      active: 1,
       isSticky: false
     }
   },
@@ -246,6 +245,5 @@ export default {
   destroyed () {
     window.removeEventListener('scroll', this.handleSCroll)
   }
-
 }
 </script>
