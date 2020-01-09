@@ -2,16 +2,17 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Profile from '../views/Profile/Profile.vue'
+import ContentProfile from '../views/Profile/Content.vue'
 
 Vue.use(VueRouter)
 
-const routes = [ {
+const routes = [{
   path: '/',
   name: 'home',
   component: Home
 }, {
   path: '/profile',
-  name: 'profil',
+  name: 'profile',
   component: Profile
 }, {
   path: '/about',
@@ -23,7 +24,15 @@ const routes = [ {
 }, {
   path: '/content/:index',
   name: 'content',
-  component: () => import('../views/Profile/Content.vue')
+  component: ContentProfile
+}, {
+  path: '/transparansi',
+  name: 'transparansi',
+  component: () => import('@/components/Content/Transparansi.vue')
+}, {
+  path: '/lembaga',
+  name: 'lembaga',
+  component: () => import('@/components/Content/Lembaga.vue')
 }]
 
 const router = new VueRouter({
