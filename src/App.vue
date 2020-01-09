@@ -209,6 +209,7 @@ li > a:hover:before {
 nav {
   left: 0;
   width: 100%;
+  font-size: 14px;
 }
 .sticky {
   position: fixed;

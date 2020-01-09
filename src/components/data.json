@@ -1,0 +1,35 @@
+{
+    "navdata":[
+        {
+        "navId": "1",
+        "navLink": "transparansi",
+        "navIcon": "fa fa-2x fa-money",
+        "navTitle": "Transparansi",
+        "navText": "Rencana Anggaran Belanja, Anggaran APBDes, SILPA."
+        }, {
+        "navId": "2",
+        "navLink": "lembaga",
+        "navIcon": "fa fa-2x fa-certificate",
+        "navTitle": "Lembaga Desa",
+        "navText": "Informasi kelembagaan (BPD, PKK, Karang Taruna, Linmas, dll)."
+        }, {
+        "navId": "3",
+        "navLink": "penduduk",
+        "navIcon": "fa fa-2x fa-users",
+        "navTitle": "Penduduk",
+        "navText": "Dapatkan data kependudukan dari desa Bakalan disini."
+        }, {
+        "navId": "4",
+        "navLink": "wilayah",
+        "navIcon": "fa fa-2x fa-globe",
+        "navTitle": "Wilayah",
+        "navText": "Letak geografis dan prasarana Wilayah desa Bakalan."
+        }, {
+        "navId": "5",
+        "navLink": "pemdes",
+        "navIcon": "fa fa-2x fa-id-badge",
+        "navTitle": "Pemerintahan Desa",
+        "navText": "Struktur Organisasi, Perdes, dan dokumen-dokumen penting."
+        }
+    ]
+}
