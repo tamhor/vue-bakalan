@@ -10,13 +10,13 @@
         "navId": "2",
         "navLink": "lembaga",
         "navIcon": "fa fa-2x fa-certificate",
-        "navTitle": "Lembaga Desa",
-        "navText": "Informasi kelembagaan (BPD, PKK, Karang Taruna, Linmas, dll)."
+        "navTitle": "Kelembagaan",
+        "navText": "Informasi kelembagaan (Pemdes, BPD, PKK, Karang Taruna, dll)."
         }, {
         "navId": "3",
         "navLink": "penduduk",
         "navIcon": "fa fa-2x fa-users",
-        "navTitle": "Penduduk",
+        "navTitle": "Kependudukan",
         "navText": "Dapatkan data kependudukan dari desa Bakalan disini."
         }, {
         "navId": "4",
@@ -26,10 +26,16 @@
         "navText": "Letak geografis dan prasarana Wilayah desa Bakalan."
         }, {
         "navId": "5",
-        "navLink": "pemdes",
-        "navIcon": "fa fa-2x fa-id-badge",
-        "navTitle": "Pemerintahan Desa",
-        "navText": "Struktur Organisasi, Perdes, dan dokumen-dokumen penting."
+        "navLink": "potensi",
+        "navIcon": "fa fa-2x fa-eye",
+        "navTitle": "Potensi Desa",
+        "navText": "Sumber Energi, Potensi Wilayah, Sumber Daya Manusia."
+        }, {
+        "navId": "6",
+        "navLink": "kesehatan",
+        "navIcon": "fa fa-2x fa-medkit",
+        "navTitle": "Kesehatan",
+        "navText": "Data kesehatan dan program peningkatan kesejahteraan."
         }
     ]
 }

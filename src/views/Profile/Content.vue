@@ -1,21 +1,11 @@
 <template>
   <div class="content">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/profile">Profile</a></li>
+        <li class="breadcrumb-item active" style="text-transform:capitalize;">{{ getIndex }}</li>
+      </ol>
     <div class="row">
-      <div class="col-md-3">
-        <div class="list-group">
-          <router-link v-for="item in navdatas" :key="item.navLink" :to="item.navLink" class="list-group-item list-group-item-action" style="font-size:9px;">
-            <i :class="item.navIcon" aria-hidden="true"> {{item.navTitle}}</i>
-          </router-link>
-        </div>
-      </div>
-      <div class="col-md-9">
-        <!-- <div v-for="item in navdatas" :key="item.navLink">
-          <div v-if="getIndex == item.navLink">
-          {{item.navText}}
-          </div>
-        </div> -->
-        <router-view></router-view>
-      </div>
+
     </div>
   </div>
 </template>
@@ -34,3 +24,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.breadcrumb-item .active {
+  text-transform:capitalize;
+}
+</style>

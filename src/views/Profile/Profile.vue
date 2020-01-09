@@ -1,8 +1,8 @@
 <template>
   <div class="profile mt-5">
-    <div class="card-deck">
+    <div class="card-deck justify-content-center">
       <div class="col-lg-3 col-md-6 col-sm-6 mb-5" v-for="(item, index) in navdatas" :key="index">
-        <a class="text-black" :href="'content/'+item.navLink" style="text-decoration: none; color:#000000;">
+        <a class="text-black" :href="item.navLink" style="text-decoration: none; color:#000000;">
           <div class="card ">
             <div class="card-body">
             <!-- <img style="height:100%; object-fit:cover;" class="card-img rounded-circle" src="http://api.bakalandesaku.com/img/view_2.JPG" alt=""> -->

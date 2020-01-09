@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Profile from '../views/Profile/Profile.vue'
-import ContentProfile from '../views/Profile/Content.vue'
 
 Vue.use(VueRouter)
 
@@ -22,17 +21,26 @@ const routes = [{
   // which is lazy-loaded when the route is visited.
   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
 }, {
-  path: '/content/:index',
-  name: 'content',
-  component: ContentProfile
-}, {
   path: '/transparansi',
   name: 'transparansi',
-  component: () => import('@/components/Content/Transparansi.vue')
+  component: () => import('../views/Profile/Content/Transparansi.vue')
 }, {
   path: '/lembaga',
   name: 'lembaga',
-  component: () => import('@/components/Content/Lembaga.vue')
+  component: () => import('../views/Profile/Content/Lembaga.vue')
+}, {
+  path: '/penduduk',
+  name: 'penduduk',
+  component: () => import('../views/Profile/Content/Penduduk/Penduduk.vue'),
+  children: [{
+    path: '/datapenduduk',
+    name: 'datapenduduk',
+    component: () => import('../views/Profile/Content/Penduduk/DataPenduduk.vue')
+  }, {
+    path: '/',
+    name: 'chartpenduduk',
+    component: () => import('../views/Profile/Content/Penduduk/ChartPenduduk.vue')
+  }]
 }]
 
 const router = new VueRouter({
