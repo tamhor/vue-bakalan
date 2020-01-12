@@ -1,19 +1,32 @@
 <template>
-  <div class="datapenduduk">
+  <div class="datapenduduk mt-5">
     <div class="row">
-        <div class="col-12 table-responsive">
-          <table id="user-table" class="display table-bordered nowrap" cellspacing="0" width="100%">
-            <thead>
-              <tr>
-                <th>User ID</th>
-                <th>User Name</th>
-                <th>User Email</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-        </div>
+      <div id="people">
+        <v-client-table style="width:100%;" :data="tableData" :columns="columns" :options="options"/>
+      </div>
     </div>
   </div>
 </template>
+
+<script>
+import axios from 'axios'
+
+export default {
+  data: function () {
+    return {
+      columns: ['id', 'nik', 'name', 'gender', 'usia', 'address'],
+      tableData: [],
+      options: {
+        columnsDisplay: true
+      }
+    }
+  },
+  mounted () {
+    axios.get('http://api.bakalandesaku.com/api/profile')
+      .then(response => {
+        this.tableData = response.data.data
+      })
+      .catch(error => console.log(error))
+  }
+}
+</script>

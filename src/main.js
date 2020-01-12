@@ -4,6 +4,13 @@ import Penduduk from './views/Profile/Content/Penduduk/Penduduk.vue'
 import './registerServiceWorker'
 import router from './router'
 import 'bootstrap/dist/css/bootstrap.css'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import { ClientTable } from 'vue-tables-2'
+
+Vue.use(ClientTable)
+
+Vue.use(VueAxios, axios)
 
 Vue.config.productionTip = false
 

@@ -1,23 +1,32 @@
 <script>
-// Importing Line class from the vue-chartjs wrapper
-import { Line } from 'vue-chartjs'
+import { Bar } from 'vue-chartjs'
+import axios from 'axios'
 
-// Exporting this so it can be used in other components
 export default {
-  extends: Line,
+  extends: Bar,
   data () {
     return {
       datacollection: {
         // Data to be represented on x-axis
-        labels: ['Pendapatan Asli Desa', 'Dana Desa', 'Alokasi Dana Desa', 'Pembagian Hasil Pajak'],
+        labels: ['Dusun Bakalan 01', 'Dusun Bakalan 02', 'Dusun Banjarsari 01', 'Dusun Banjarsari 02', 'Dusun Jamuran', 'Dusun Kebonjati'],
         datasets: [
           {
-            backgroundColor: '#f87979',
+            label: 'Perempuan',
+            backgroundColor: '#fff3af',
             pointBackgroundColor: 'white',
             borderWidth: 1,
-            pointBorderColor: '#249EBF',
+            pointBorderColor: '#ffd271',
             // Data to be represented on y-axis
-            data: [50000000, 899662000, 49540000, 41732000]
+            data: []
+          },
+          {
+            label: 'Laki-Laki',
+            backgroundColor: '#3282b8',
+            pointBackgroundColor: 'white',
+            borderWidth: 1,
+            pointBorderColor: '#0f4c75',
+            // Data to be represented on y-axis
+            data: []
           }
         ]
       },
@@ -48,6 +57,11 @@ export default {
   },
   mounted () {
     // renderChart function renders the chart with the datacollection and options object.
+    axios.get('http://api.bakalandesaku.com/api/profile')
+      .then(response => {
+        this.dataL = response.data.data
+      })
+      .catch(error => console.log(error))
     this.renderChart(this.datacollection, this.options)
   }
 }
