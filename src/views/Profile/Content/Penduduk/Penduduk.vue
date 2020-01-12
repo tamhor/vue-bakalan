@@ -1,5 +1,5 @@
 <template>
-  <div class='penduduk'>
+  <div class="penduduk">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/profile">Profile</a></li>
       <li class="breadcrumb-item active">Penduduk</li>

@@ -24,7 +24,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid" style="background-color: #ffffff;">
+    <div class="container-fluid">
       <div class="jumbotron container bg-dark mb-0" style="background: radial-gradient(circle, rgba(2,0,36,1) 3%, rgba(9,66,121,1) 45%, rgba(45,60,0,1) 90%);">
         <div class="row">
           <div class="col-lg-4">
@@ -37,20 +37,30 @@
       </div>
       <nav class="navbar border border-primary border-top-0 navbar-expand navbar-light rounded-pill mb-3 d-flex justify-content-between" v-bind:class="{ sticky: isSticky }" style="background-color: #D3b850; font-weight:bold;">
         <ul class="nav navbar-nav">
-          <li class="nav-item " @click="active = 1" :class="{ 'active': active === 1 }">
-            <a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true"></i> Beranda</a>
+          <li>
+            <router-link class="nav-item nav-link" to="/" exact-active-class="active" >
+              <i class="fa fa-home" aria-hidden="true"></i> Beranda
+            </router-link>
           </li>
-          <li class="nav-item" @click="active = 2" :class="{ 'active': active === 2 }">
-            <a class="nav-link" href="/profile"><i class="fa fa-users" aria-hidden="true"></i> Profil</a>
+          <li>
+            <router-link class="nav-item nav-link" to="/profile" active-class="active">
+              <i class="fa fa-users" aria-hidden="true"></i> Profil
+            </router-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-picture-o" aria-hidden="true"></i> Galeri</a>
+          <li>
+          <router-link class="nav-item nav-link" to="/galeri" active-class="active">
+            <i class="fa fa-picture-o" aria-hidden="true"></i> Galeri
+          </router-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i> Blogs</a>
+          <li>
+          <router-link class="nav-item nav-link" to="/transparansi" active-class="active">
+            <i class="fa fa-money" aria-hidden="true"></i> Transparansi
+          </router-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-gears" aria-hidden="true"></i> Layanan</a>
+          <li>
+          <router-link class="nav-item nav-link" to="/layanan" active-class="active">
+            <i class="fa fa-gears" aria-hidden="true"></i> Layanan
+          </router-link>
           </li>
         </ul>
       </nav>
@@ -157,17 +167,17 @@ nav ul li:hover {
   background-color: rgb(231, 184, 80);
 }
 
-li > a {
+li > .nav-link {
   position: relative;
   color: #000000;
   text-align: center;
   text-decoration: none;
 }
 
-li > a:hover {
+li > .nav-link:hover {
   color: #000000;
 }
-li.active > a:after {
+li.active > .nav-link:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -177,7 +187,7 @@ li.active > a:after {
   background-color: #000000;
 }
 
-li > a:before {
+li > .nav-link:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -192,7 +202,7 @@ li > a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-li > a:hover:before {
+li > .nav-link:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);

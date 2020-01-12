@@ -14,6 +14,18 @@ const routes = [{
   name: 'profile',
   component: Profile
 }, {
+  path: '/galeri',
+  name: 'galeri',
+  component: () => import('../views/Galeri/Galeri.vue')
+}, {
+  path: '/transparansi',
+  name: 'transparansi',
+  component: () => import('../views/Transparansi/Transparansi.vue')
+}, {
+  path: '/blogs',
+  name: 'blogs',
+  component: () => import('../views/Blogs/Blogs.vue')
+}, {
   path: '/about',
   name: 'about',
   // route level code-splitting
@@ -21,16 +33,15 @@ const routes = [{
   // which is lazy-loaded when the route is visited.
   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
 }, {
-  path: '/transparansi',
-  name: 'transparansi',
-  component: () => import('../views/Profile/Content/Transparansi.vue')
+  path: '/infrastruktur',
+  name: 'infrastruktur',
+  component: () => import('../views/Profile/Content/Infrastruktur.vue')
 }, {
   path: '/lembaga',
   name: 'lembaga',
   component: () => import('../views/Profile/Content/Lembaga.vue')
 }, {
   path: '/penduduk',
-  name: 'penduduk',
   component: () => import('../views/Profile/Content/Penduduk/Penduduk.vue'),
   children: [{
     path: '/datapenduduk',

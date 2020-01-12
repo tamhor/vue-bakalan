@@ -2,10 +2,10 @@
     "navdata":[
         {
         "navId": "1",
-        "navLink": "transparansi",
-        "navIcon": "fa fa-2x fa-money",
-        "navTitle": "Transparansi",
-        "navText": "Rencana Anggaran Belanja, Anggaran APBDes, SILPA."
+        "navLink": "infrastruktur",
+        "navIcon": "fa fa-2x fa-road",
+        "navTitle": "Infrastruktur",
+        "navText": "Galeri infrasruktur dan pembangunan di desa Bakalan."
         }, {
         "navId": "2",
         "navLink": "lembaga",
