@@ -2,7 +2,7 @@
   <div class="datapenduduk mt-5">
     <div class="row">
       <div id="people">
-        <v-client-table style="width:100%;" :data="tableData" :columns="columns" :options="options"/>
+        <v-client-table class="table-responsive" style="width:100%;" :data="tableData" :columns="columns" :options="options"/>
       </div>
     </div>
   </div>
@@ -14,7 +14,7 @@ import axios from 'axios'
 export default {
   data: function () {
     return {
-      columns: ['id', 'nik', 'name', 'gender', 'usia', 'address'],
+      columns: ['id', 'nik', 'name', 'gender', 'usia', 'address', 'rt', 'rw'],
       tableData: [],
       options: {
         columnsDisplay: true

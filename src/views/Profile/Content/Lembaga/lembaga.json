@@ -1,0 +1,41 @@
+{
+    "lembaga":[
+        {
+        "lembagaId": "1",
+        "lembagaLink": "pemdes",
+        "lembagaIcon": "fa fa-2x fa-road",
+        "lembagaTitle": "Pemerintahan Desa",
+        "lembagaText": "Pemerintah Desa atau disebut juga Pemdes adalah lembaga pemerintah yang bertugas mengelola wilayah tingkat desa. Lembaga ini diatur melalui Peraturan Pemerintah No. 72 Tahun 2005 tentang pemerintahan desa yang diterbitkan untuk melaksanakan ketentuan pasal 216 ayat (1) Undang Undang Nomor 32 Tahun 2004 tentang pemerintahan daerah. Pemimpin pemerintah desa, seperti tertuang dalam paragraf 2 pasal 14 ayat (1), adalah kepala desa yang bertugas menyelenggarakan urusan pemerintahan, pembangunan, dan kemasyarakatan."
+        }, {
+        "lembagaId": "2",
+        "lembagaLink": "lembaga",
+        "lembagaIcon": "fa fa-2x fa-certificate",
+        "lembagaTitle": "Kelembagaan",
+        "lembagaText": "Informasi kelembagaan (Pemdes, BPD, PKK, Karang Taruna, dll)."
+        }, {
+        "lembagaId": "3",
+        "lembagaLink": "penduduk",
+        "lembagaIcon": "fa fa-2x fa-users",
+        "lembagaTitle": "Kependudukan",
+        "lembagaText": "Dapatkan data kependudukan dari desa Bakalan disini."
+        }, {
+        "lembagaId": "4",
+        "lembagaLink": "wilayah",
+        "lembagaIcon": "fa fa-2x fa-globe",
+        "lembagaTitle": "Wilayah",
+        "lembagaText": "Letak geografis dan prasarana Wilayah desa Bakalan."
+        }, {
+        "lembagaId": "5",
+        "lembagaLink": "potensi",
+        "lembagaIcon": "fa fa-2x fa-eye",
+        "lembagaTitle": "Potensi Desa",
+        "lembagaText": "Sumber Energi, Potensi Wilayah, Sumber Daya Manusia."
+        }, {
+        "lembagaId": "6",
+        "lembagaLink": "kesehatan",
+        "lembagaIcon": "fa fa-2x fa-medkit",
+        "lembagaTitle": "Kesehatan",
+        "lembagaText": "Data kesehatan dan program peningkatan kesejahteraan."
+        }
+    ]
+}

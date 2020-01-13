@@ -39,7 +39,7 @@ const routes = [{
 }, {
   path: '/lembaga',
   name: 'lembaga',
-  component: () => import('../views/Profile/Content/Lembaga.vue')
+  component: () => import('../views/Profile/Content/Lembaga/Lembaga.vue')
 }, {
   path: '/penduduk',
   component: () => import('../views/Profile/Content/Penduduk/Penduduk.vue'),
