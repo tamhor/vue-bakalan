@@ -8,22 +8,22 @@
         "lembagaText": "Pemerintah Desa atau disebut juga Pemdes adalah lembaga pemerintah yang bertugas mengelola wilayah tingkat desa. Lembaga ini diatur melalui Peraturan Pemerintah No. 72 Tahun 2005 tentang pemerintahan desa yang diterbitkan untuk melaksanakan ketentuan pasal 216 ayat (1) Undang Undang Nomor 32 Tahun 2004 tentang pemerintahan daerah. Pemimpin pemerintah desa, seperti tertuang dalam paragraf 2 pasal 14 ayat (1), adalah kepala desa yang bertugas menyelenggarakan urusan pemerintahan, pembangunan, dan kemasyarakatan."
         }, {
         "lembagaId": "2",
-        "lembagaLink": "lembaga",
+        "lembagaLink": "bumdes",
         "lembagaIcon": "fa fa-2x fa-certificate",
-        "lembagaTitle": "Kelembagaan",
-        "lembagaText": "Informasi kelembagaan (Pemdes, BPD, PKK, Karang Taruna, dll)."
+        "lembagaTitle": "Badan Usaha Milik Desa",
+        "lembagaText": "Badan usaha milik desa (atau diakronimkan menjadi Bumdes) merupakan usaha desa yang dikelola oleh Pemerintah Desa, dan berbadan hukum. Pemerintah Desa dapat mendirikan Badan Usaha Milik Desa sesuai dengan kebutuhan dan potensi Desa. Pembentukan Badan Usaha Milik Desa ditetapkan dengan Peraturan Desa. Kepengurusan Badan Usaha Milik Desa terdiri dari Pemerintah Desa dan masyarakat desa setempat."
         }, {
         "lembagaId": "3",
-        "lembagaLink": "penduduk",
+        "lembagaLink": "bpd",
         "lembagaIcon": "fa fa-2x fa-users",
-        "lembagaTitle": "Kependudukan",
-        "lembagaText": "Dapatkan data kependudukan dari desa Bakalan disini."
+        "lembagaTitle": "Badan Permusyawaratan Desa",
+        "lembagaText": "Badan Permusyawaratan Desa (BPD) merupakan lembaga perwujudan demokrasi dalam penyelenggaraan pemerintahan desa. BPD dapat dianggap sebagai parlemen-nya desa. BPD merupakan lembaga baru di desa pada era otonomi daerah di Indonesia."
         }, {
         "lembagaId": "4",
-        "lembagaLink": "wilayah",
+        "lembagaLink": "lpmd",
         "lembagaIcon": "fa fa-2x fa-globe",
-        "lembagaTitle": "Wilayah",
-        "lembagaText": "Letak geografis dan prasarana Wilayah desa Bakalan."
+        "lembagaTitle": "Lembaga Pemberdayaan Masyarakat Desa",
+        "lembagaText": "Berdasarkan Peraturan Daerah Nomor 13 Tahun 2006 Tentang Lembaga Kemasyarakatan dan Lembaga Adat menyebutkan bahwa Pengertian Lembaga Pemberdayaan Masyarakat yang selanjutnya disingkat ( LPM ) adalah lembaga, organisasi atau wadah yang di bentuk atas prakarsa masyarakat sebagai mitra pemerintah kelurahan dalam menampung dan mewujudkan aspirasi dan kebutuhan masyarakat di bidang pembangunan."
         }, {
         "lembagaId": "5",
         "lembagaLink": "potensi",
